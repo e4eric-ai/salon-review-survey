@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hardcoded, same documented limitation as the main apps' own login screen (see
+         progress-notes-business-info-addendum-2026-10-09.md): there's no authenticated session
+         here to read the live BUSINESS_NAME from app_settings, and adding a public RPC just to
+         expose the salon's display name wasn't worth a schema change for one string. Update by
+         hand if the salon's name ever changes. -->
+    <title>Share Your Experience — Rosewater Salon & Co.</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
